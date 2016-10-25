@@ -1,0 +1,295 @@
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('fonts/proximanovalight-webfont.eot');
+    src: url('fonts/proximanovalight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/proximanovalight-webfont.woff2') format('woff2'),
+         url('fonts/proximanovalight-webfont.woff') format('woff'),
+         url('fonts/proximanovalight-webfont.ttf') format('truetype'),
+         url('fonts/proximanovalight-webfont.svg#proxima_novalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('fonts/proximanova-bold-webfont.eot');
+    src: url('fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/proximanova-bold-webfont.woff2') format('woff2'),
+         url('fonts/proximanova-bold-webfont.woff') format('woff'),
+         url('fonts/proximanova-bold-webfont.ttf') format('truetype'),
+         url('fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* ----------------------------------------  COMMON ---------------------------------------- */
+body{
+    background-image: url('images/bgBody.png');
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style-type: none;
+}
+/* --------------------------------------  HEADER TOP -------------------------------------- */
+.headerTop{
+    background-color: #202017;
+    height: auto;
+}
+.headerInner{
+    width: 100%;    
+}
+#titlePart{
+    color: white;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 6px;
+}
+#iconSocialPart{
+    text-align: right;
+    height: 10%;
+}
+#iconSocialPart a{
+    color: #202017;
+    font-size: 0.9em;
+}
+/** MAIN - CONTENT */
+.mainContent{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    opacity: 0.9;
+    height: auto;
+}
+/** SLIDE */
+.slideContainer{
+    width: 90%;
+    margin: 0px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.slidePart{
+    position: relative;
+}
+.slidePart img{
+    border-radius: 25px;
+    height: 300px;
+    width: 100%;
+    margin: 0 auto;
+}
+/** BUTTON TRANSFORM SLIDE */
+.slidePaper{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+.slidePaper ul{
+    text-align: center;
+    line-height: 10px;
+}
+.slidePaper ul li{
+    text-decoration: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #bee2e1;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 2px;
+}
+.slidePaper ul li:hover{
+    background: #fff;
+}
+.slidePaper ul .focus{
+    background: #fff;
+}
+/** CONTENT BANNER */
+.contentSlide{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    margin-left: 3%;
+}
+.bannerInner{
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+}
+.bannerPart h3{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    font-size: 72px;
+    color: #ffffff;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.bannerPart #description{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #f2f2f2;
+    font-weight: 100;
+    font-style: italic;
+}
+.bannerPart a{
+    width: 20%;
+    height: 10%;
+    margin: 10px;
+    display: inline-block;
+    font-size: 180%;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 180%;
+    text-decoration: none;
+    background: #bf1a0c;
+    text-align: center;
+}
+.bannerPart a:hover{
+    background: #ffffff;
+    color: #bf1a0c;
+    font-weight: bold;
+}
+/** FORM */
+.formContainer{
+    width: 90%;
+    margin: 0 auto;
+}
+.formPart{
+    display: inline-block;
+}
+.formPart form{
+    text-align: center;
+    width: 80%;
+}
+/** CONTENT */
+.sidebar {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 12px;
+}
+.titleLeft h3{
+    font-family: 'Roboto', sans-serif;
+    color: #f00;
+    font-weight: 400;
+}
+.listCat{
+    width: 100%;
+}
+.listCat ul li{
+    background-color: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    -moz-border-radius-topright: 20px;
+    -moz-border-radius-bottomright:20px;
+    width: 100%;
+    padding: 4px;
+    margin-left: 2px;
+    border-bottom: 1px dotted #ffd297;
+    font-family: 'Mitr', sans-serif;
+    color: #f3a290;
+}
+.listCat ul li:hover{
+    color: #cc1e00;
+    background-color: #a7d2ff;
+    transform:translateX(20px);
+    -webkit-transform:translateX(20px);
+    -moz-transform:translateX(20px);
+    -o-transform:translateX(20px);
+    
+	transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s; 
+    -moz-transition-duration: 0.8s; 
+    -o-transition-duration: 0.8s;
+     
+	text-shadow: 0px 0px 10px #ddd2c6;
+}
+.titleDetail h3{
+    color: #58a5de;
+    font-style: normal;
+}
+/** BOOK LIST */
+.listBook{
+    width: 98%;
+    margin-left: 4px;
+}
+#book{
+	width:30%;
+	margin-bottom:10px;
+    margin-right: 20px;
+}
+#book .row img{
+    border-radius:10px;
+	margin-right:10px;
+    width: 90%;
+}
+#book .row img:hover{
+    transform: scale(1.1);
+    -webkit-transform:scale(1.1); 
+    -moz-transform:scale(1.1); 
+    -o-transform:scale(1.1); 
+
+    transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s; 
+    -moz-transition-duration: 0.8s; 
+    -o-transition-duration: 0.8s; 
+
+    box-shadow:0px 0px 30px white; 
+    -webkit-box-shadow:0px 0px 30px white; 
+    -moz-box-shadow:0px 0px 30px white; 
+    opacity: 1;
+}
+#book .nameBook{
+    font-weight: bold;
+    color: #ff6a00;
+    font-size: 24px;
+}    
+#book .typeBook{
+    color: #f00;
+    font-weight: bold;
+    font-family: 'Mitr', sans-serif;
+}
+#book .author{
+    color: #f00;
+    font-weight: bold;
+    font-family: 'Mitr', sans-serif;
+}
+#book .addButton{
+    width: 50%;
+    text-align: right;
+    background-color: #f3a290;
+    color: White;
+}
+@media (max-width: @screen-xs) {
+    body{font-size: 10px;}
+}
+
+@media (max-width: @screen-sm) {
+    body{font-size: 14px;}
+}
+.footerBook{
+    background: #ffffff; 
+    background: -webkit-linear-gradient(#ffffff, #d9d5d6); 
+    background: -o-linear-gradient(#ffffff, #d9d5d6); 
+    background: -moz-linear-gradient(#ffffff, #d9d5d6); 
+    background: linear-gradient(#ffffff, #d9d5d6);
+    color: white;
+}
