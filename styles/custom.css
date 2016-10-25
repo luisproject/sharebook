@@ -285,6 +285,10 @@ ul{
 @media (max-width: @screen-sm) {
     body{font-size: 14px;}
 }
+.paginationBook{
+    margin: 0 auto;
+    text-align: center;
+}
 .footerBook{
     background: #ffffff; 
     background: -webkit-linear-gradient(#ffffff, #d9d5d6); 
