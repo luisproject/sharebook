@@ -27,6 +27,11 @@
 
     </head>
     <body>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
         <div class="header">
             <div class="headerTop">
                 <div class="container">
@@ -105,7 +110,14 @@
                             <input class="submit_search form-control" name="" value="Tìm kiếm" type="submit">
                         </div>
                         <div class="col-md-2 form-group formLogin">
-                            <input type="button" class="btn btn-success form-control" id="email" value="Đăng Nhập">
+                           <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Login
+                             <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                            <li><a href="#">Cá nhân</a></li>
+                            <li><a href="#">Đăng xuất</a></li>
+                          </ul>
+                        </div>
                         </div>
                     </form>                      
                 </div>
