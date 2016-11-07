@@ -180,6 +180,9 @@ ul{
     text-align: center;
     width: 80%;
 }
+.formPart .formAll{
+    text-align: right;
+}
 /** CONTENT */
 .sidebar {
     width: 90%;
@@ -191,6 +194,13 @@ ul{
     font-family: 'Roboto', sans-serif;
     color: #f00;
     font-weight: 400;
+    font-family: "Source Sans Pro";
+    color: rgb(18, 93, 112);
+    line-height: 1.681;
+    text-align: center;
+    text-shadow: 0px 6px 18.6px rgba(255, 234, 0, 0.004);
+    font-weight: 800;
+    margin-top: 12px;
 }
 .listCat{
     width: 100%;
@@ -206,6 +216,10 @@ ul{
     border-bottom: 1px dotted #ffd297;
     font-family: 'Mitr', sans-serif;
     color: #f3a290;
+    border-width: 1px;
+    border-color: rgb(109, 207, 246);
+    border-style: solid;
+    border-radius: 30px;
 }
 .listCat ul li:hover{
     color: #cc1e00;
@@ -215,16 +229,16 @@ ul{
     -moz-transform:translateX(20px);
     -o-transform:translateX(20px);
     
-	transition-duration: 0.8s;
+    transition-duration: 0.8s;
     -webkit-transition-duration: 0.8s; 
     -moz-transition-duration: 0.8s; 
     -o-transition-duration: 0.8s;
      
-	text-shadow: 0px 0px 10px #ddd2c6;
+    text-shadow: 0px 0px 10px #ddd2c6;
 }
 .titleDetail h3{
-    color: #58a5de;
-    font-style: normal;
+    color: rgb(21, 137, 166);
+    font-weight: bold;
 }
 /** BOOK LIST */
 .listBook{
@@ -232,13 +246,13 @@ ul{
     margin-left: 4px;
 }
 #book{
-	width:30%;
-	margin-bottom:10px;
+    width:30%;
+    margin-bottom:10px;
     margin-right: 20px;
 }
 #book .row img{
     border-radius:10px;
-	margin-right:10px;
+    margin-right:10px;
     width: 90%;
 }
 #book .row img:hover{
@@ -257,20 +271,37 @@ ul{
     -moz-box-shadow:0px 0px 30px white; 
     opacity: 1;
 }
-#book .nameBook{
-    font-weight: bold;
-    color: #ff6a00;
-    font-size: 24px;
-}    
-#book .typeBook{
-    color: #f00;
-    font-weight: bold;
-    font-family: 'Mitr', sans-serif;
+#book .nameBook{    
+    font-size: 27px;
+    font-family: "Source Sans Pro";
+    color: rgb(3, 135, 197);
+    margin-top: 10px;
+    text-align: center;
 }
+#book .inforBook{
+    text-align: center;
+    margin-top: -10px;
+}
+#book .tagBook {
+    font-size: 14px;
+    font-family: "Source Sans Pro";
+    color: rgb(0, 0, 0);
+    line-height: 1.0;
+    text-align: center;
+}
+#book .typeBook {
+    font-size: 14px;
+    font-family: "Source Sans Pro";
+    color: rgb(3, 135, 197);
+    line-height: 1.0;
+    text-align: center;
+}    
 #book .author{
-    color: #f00;
-    font-weight: bold;
-    font-family: 'Mitr', sans-serif;
+    font-size: 18px;
+    font-family: "Source Sans Pro";
+    color: rgb(3, 135, 197);
+    margin-top: -15px;
+    text-align: center;
 }
 #book .addButton{
     width: 50%;
@@ -296,4 +327,134 @@ ul{
     background: -moz-linear-gradient(#ffffff, #d9d5d6); 
     background: linear-gradient(#ffffff, #d9d5d6);
     color: white;
+}
+
+/** LOGINPAGE ------------- */
+#loginPage form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+#loginPage input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+#loginPage button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra style for the cancel button (red) */
+#loginPage .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+#loginPage .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+#loginPage img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+#loginPage .container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+#loginPage span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+/** ==> CUSTOMIZE CSS TO CONTROLL [CSS => JAVASCRIPT] */
+ /* The Modal (background) */
+#loginPage .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+#loginPage .modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    position: fixed;
+    width: 80%;
+    top: 100px;
+    right: 100px;
+    left: 100px;
+}
+
+/* The Close Button */
+#loginPage .close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+#loginPage .close:hover,
+#loginPage .close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
 }
