@@ -24,6 +24,10 @@
 /* ----------------------------------------  COMMON ---------------------------------------- */
 body{
     background-image: url('images/bgBody.png');
+    -webkit-background-image: url('images/bgBody.png');
+    -moz-background-image: url('images/bgBody.png');
+    -o-background-image: url('images/bgBody.png');
+    
     background-repeat: no-repeat;
     overflow-x: hidden;
 }
@@ -74,7 +78,7 @@ ul{
 }
 /** SLIDE */
 .slideContainer{
-    width: 90%;
+    width: 80%;
     margin: 0px auto;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -169,16 +173,13 @@ ul{
     font-weight: bold;
 }
 /** FORM */
-.formContainer{
-    width: 90%;
-    margin: 0 auto;
-}
 .formPart{
     display: inline-block;
+    width: 80%;
+    margin-left: 120px;
 }
 .formPart form{
     text-align: center;
-    width: 80%;
 }
 .formPart .formAll{
     text-align: right;
@@ -207,19 +208,35 @@ ul{
 }
 .listCat ul li{
     background-color: #e8e8e8;
-    border: 1px solid #e8e8e8;
+    -moz-border: 1px solid #e8e8e8;
     -moz-border-radius-topright: 20px;
     -moz-border-radius-bottomright:20px;
+    
+    -webkit-border: 1px solid #e8e8e8;
+    -webkit-border-radius-topright: 20px;
+    -webkit-border-radius-bottomright:20px;
+    
     width: 100%;
     padding: 4px;
     margin-left: 2px;
     border-bottom: 1px dotted #ffd297;
-    font-family: 'Mitr', sans-serif;
     color: #f3a290;
+    
     border-width: 1px;
+    -webkit-border-width: 1px;
+    -moz-border-width: 1px;
+    
     border-color: rgb(109, 207, 246);
+    -webkit-border-color: rgb(109, 207, 246);
+    -moz-border-color: rgb(109, 207, 246);
+    
     border-style: solid;
+    -webkit-border-style: solid;
+    -moz-border-style: solid;
+    
     border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
 }
 .listCat ul li:hover{
     color: #cc1e00;
@@ -329,24 +346,47 @@ ul{
     color: white;
 }
 
-/** LOGINPAGE ------------- */
-#loginPage form {
-    border: 3px solid #f1f1f1;
+/** FORM-LOGIN */
+#loginPage .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;s
+    font-size: 35px;
+    font-weight: bold;
 }
 
-/* Full-width inputs */
-#loginPage input[type=text], input[type=password] {
+#loginPage .close:hover,
+#loginPage .close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+#loginPage .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 80%; 
+}
+#loginPage .container{
+    width: 80%;
+    margin: 0 auto;
+}
+#loginPage .container input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(109, 207, 246);
     box-sizing: border-box;
 }
 
+#loginPage .container input[type=checkbox]{
+    margin-top: 5px;
+}
 /* Set a style for all buttons */
-#loginPage button {
-    background-color: #4CAF50;
+#loginPage .container button {
+    background-color: rgb(109, 207, 246);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -355,96 +395,25 @@ ul{
     width: 100%;
 }
 
-/* Extra style for the cancel button (red) */
-#loginPage .cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
-
-/* Center the avatar image inside this container */
-#loginPage .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-}
-
-/* Avatar image */
-#loginPage img.avatar {
-    width: 40%;
-    border-radius: 50%;
-}
-
-/* Add padding to containers */
-#loginPage .container {
-    padding: 16px;
-}
-
-/* The "Forgot password" text */
-#loginPage span.psw {
+#loginPage .container span.psw {
     float: right;
     padding-top: 16px;
 }
 
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-        display: block;
-        float: none;
-    }
-    .cancelbtn {
-        width: 100%;
-    }
+#loginPage .container .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+}
+#loginPage .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
 }
 
-/** ==> CUSTOMIZE CSS TO CONTROLL [CSS => JAVASCRIPT] */
- /* The Modal (background) */
-#loginPage .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
+#loginPage img.avatar {
 }
 
-/* Modal Content/Box */
-#loginPage .modal-content {
-    background-color: #fefefe;
-    margin: 5px auto; /* 15% from the top and centered */
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    position: fixed;
-    width: 80%;
-    top: 100px;
-    right: 100px;
-    left: 100px;
-}
-
-/* The Close Button */
-#loginPage .close {
-    /* Position it in the top right corner outside of the modal */
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-}
-
-/* Close button on hover */
-#loginPage .close:hover,
-#loginPage .close:focus {
-    color: red;
-    cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
+#loginPage .animate {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
 }
@@ -453,8 +422,18 @@ ul{
     from {-webkit-transform: scale(0)}
     to {-webkit-transform: scale(1)}
 }
-
+    
 @keyframes animatezoom {
     from {transform: scale(0)}
     to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
 }
