@@ -78,7 +78,7 @@ ul{
 }
 /** SLIDE */
 .slideContainer{
-    width: 80%;
+    width: 100%;
     margin: 0px auto;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -351,7 +351,7 @@ ul{
     position: absolute;
     right: 25px;
     top: 0;
-    color: #000;s
+    color: #000;
     font-size: 35px;
     font-weight: bold;
 }
@@ -363,11 +363,14 @@ ul{
 }
 
 #loginPage .modal-content {
-    background-color: #fefefe;
+    background:linear-gradient(top,#06b0ca,#6ec9dc);
+	background: -webkit-linear-gradient(top,#06b0ca,#6ec9dc);
+	background: -moz-linear-gradient(top,#06b0ca,#6ec9dc);
     margin: 5% auto 15% auto; 
     border: 1px solid #888;
     width: 80%; 
 }
+
 #loginPage .container{
     width: 80%;
     margin: 0 auto;
@@ -393,24 +396,23 @@ ul{
     border: none;
     cursor: pointer;
     width: 100%;
+    
+    background: linear-gradient(top,#f2f6f7,#979394);
+	background: -webkit-linear-gradient(top,#f2f6f7,#979394);
+	background: -moz-linear-gradient(top,#f2f6f7,#979394);
+    
+    border-radius: 5px;
+    border: 1px solid #019db4;
 }
-
 #loginPage .container span.psw {
     float: right;
     padding-top: 16px;
+    color: white;
 }
 
 #loginPage .container .cancelbtn {
     width: auto;
     padding: 10px 18px;
-}
-#loginPage .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
-}
-
-#loginPage img.avatar {
 }
 
 #loginPage .animate {
@@ -436,4 +438,43 @@ ul{
     .cancelbtn {
        width: 100%;
     }
+}
+
+/*** =========== PROFILE ============= */
+#profile{
+    margin-top: 10px;
+}
+#profile .profileInner{
+    border-width: 1px;
+    border-color: rgb(183, 183, 183);
+    border-style: solid;
+    text-align: center;
+    padding-top: 5px;
+}
+#profile .inforAuthor{
+    text-align: left;
+}
+#profile .info{
+    border-width: 1px;
+    border-color: rgb(183, 183, 183);
+    border-style: solid;
+    background-color: rgb(243, 243, 243);
+    width: 86%;
+    margin-top: 10px;
+    margin-left: 25px;
+    padding: 5px;
+}
+#profile .icon{
+    font-size: 20px;
+    color: rgb(3, 135, 197);
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30px;
+}
+#profile .detail {
+    font-style: italic;
+    font-family: 'Roboto'; 
+    font-weight: bold; 
+    color: rgb(3, 135, 197);
+    font-size: 16px;
 }

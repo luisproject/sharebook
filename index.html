@@ -17,21 +17,20 @@
         <!-- Embed CSS -->
         <link href="styles/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="styles/animate.css" rel="stylesheet" type="text/css">
+        
+        <!-- Solution Firefox -->
+        <link rel="stylesheet" href="http://www.upsingh.in/css/font-awesome.min.css"/>
+        <!--Common -->
         <link href="styles/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
         <!-- Embed Javascript -->
         <script src="styles/bootstrap.min.js" type="text/javascript"></script>
         <script src="styles/jquery.js" type="text/javascript"></script>
 
         <!-- Embed Customize CSS -->
         <link href="styles/custom.css" rel="stylesheet" type="text/css"/>
-        <!-- <link href="styles/login.css" rel="stylesheet" type="text/css"/> -->
     </head>
     <body>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-
         <div class="header">
             <div class="headerTop">
                 <div class="container">
@@ -96,13 +95,13 @@
                     </div>
                 </div>
             </div>
-            <div class="formContainer row">
+            <div class="row">
                 <div class="formPart container">
                     <form action="" class="form-inline">
                         <div class="col-md-2 form-group formAll">
                             <a class="btn btn-primary" href="">
-                                <i class="fa fa-list" style="color: white;"></i>
-                                <span style="color: white">Tất cả</span>
+                                <i class="fa fa-list"></i>
+                                Tất cả
                             </a>
                         </div>
                         <div class="col-md-8 formSearch">
@@ -110,16 +109,9 @@
                             <input class="submit_search form-control" name="" value="Tìm kiếm" type="submit">
                         </div>
                         <div class="col-md-2 form-group formLogin">
-                           <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Login
-                             <span class="caret"></span></button>
-                            <ul class="dropdown-menu">
-                            <li><a href="#">Cá nhân</a></li>
-                            <li><a href="#">Đăng xuất</a></li>
-                          </ul>
+                            <input type="button" class="btn btn-success form-control" id="email" onclick="document.getElementById('loginPage').style.display='block'" value="Đăng Nhập">
                         </div>
-                        </div>
-                    </form>                      
+                    </form>                   
                 </div>
             </div>
             <div class="row sidebar">
@@ -260,33 +252,29 @@
                 </div>
             </div>
         </div>
-        <div id="loginPage" class="model">
+        <div id="loginPage" class="modal" style="background-image: url(styles/images/bgBody.png);">
              <form class="modal-content animate" action="action_page.php">
              <span onclick="document.getElementById('loginPage').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <h3 style="color: white; margin-left: 120px; font-family: 'Roboto'; font-weight: 200;">Đăng Nhập <i class="fa fa-lock"></i></h3>
+              <div class="container">
+                <label><b  style="font-family: 'Roboto'; font-weight: bold; color: white;">Tên Đăng Nhập</b></label>
+                <input type="text" placeholder="Vui lòng nhập tên đăng nhập của bạn vào đây " name="uname" required>
 
-              <div class="imgcontainer">
-                <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                <label><b style="font-family: 'Roboto'; font-weight: bold; color: white;">Mật Khẩu</b></label>
+                <input type="password" placeholder="Vui lòng nhập mật khẩu của bạn vào đây " name="psw" required>
+                <input class="chk" type="checkbox" checked="checked">  Ghi Chú
+
+                <button type="submit" style="color: #00668b">Đăng Nhập</button>
               </div>
 
               <div class="container">
-                <label><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
-
-                <label><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                <button type="submit">Login</button>
-                <input type="checkbox" checked="checked"> Remember me
-              </div>
-
-              <div class="container" style="background-color:#f1f1f1">
-                <button type="button" class="cancelbtn">Cancel</button>
+                <button type="button" class="cancelbtn" style="color: #00668b">Cancel</button>
                 <span class="psw">Forgot <a href="#">password?</a></span>
               </div>
             </form>
         </div>
-        <div class="row footerBook">
-            <p>Copyright @ sharebook.com.vn </p>
+        <div class="row footerBook text-center" style="color: #808080;">
+            <p style="margin-top: 8px;">Copyright @ sharebook.com.vn </p>
         </div>
         <script src="styles/JavaScript.js" type="text/javascript" ></script>
     </body>
