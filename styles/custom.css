@@ -346,7 +346,11 @@ ul{
     color: white;
 }
 
-/** FORM-LOGIN */
+/**                                             ----
+    ----                                    ----
+        ----                            ----
+            ----                    ----
+                ---- FORM-LOGIN ---- */
 #loginPage .close {
     position: absolute;
     right: 25px;
@@ -356,19 +360,22 @@ ul{
     font-weight: bold;
 }
 
-#loginPage .close:hover,
-#loginPage .close:focus {
+#loginPage .close:hover,#loginPage .close:focus {
     color: red;
     cursor: pointer;
 }
 
+/**
+    ----
+        ----
+            ---- CONTENT FORM ----*/
 #loginPage .modal-content {
     background:linear-gradient(top,#06b0ca,#6ec9dc);
 	background: -webkit-linear-gradient(top,#06b0ca,#6ec9dc);
 	background: -moz-linear-gradient(top,#06b0ca,#6ec9dc);
     margin: 5% auto 15% auto; 
     border: 1px solid #888;
-    width: 80%; 
+    width: 40%; 
 }
 
 #loginPage .container{
@@ -377,7 +384,7 @@ ul{
 }
 #loginPage .container input[type=text], input[type=password] {
     width: 100%;
-    padding: 12px 20px;
+    padding: 6px 6px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid rgb(109, 207, 246);
@@ -391,7 +398,7 @@ ul{
 #loginPage .container button {
     background-color: rgb(109, 207, 246);
     color: white;
-    padding: 14px 20px;
+    padding: 6px 6px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
@@ -440,7 +447,11 @@ ul{
     }
 }
 
-/*** =========== PROFILE ============= */
+/**                                             ----
+    ----                                    ----
+        ----                            ----
+            ----                    ----
+                ---- PROFILE ---- */
 #profile{
     margin-top: 10px;
 }
@@ -522,4 +533,19 @@ ul{
     margin-right: 15px;
     line-height: 1.6em;
     text-align: justify;
+}
+
+/**                                             ----
+    ----                                    ----
+        ----                            ----
+            ----                    ----
+                ---- DETAIL ---- */
+#detail .detailInner{
+    text-align: center;
+    border-width: 1px;    
+    padding-top: 5px;
+}
+
+#detail .detailContent{
+    border: 1px solid red;
 }

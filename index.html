@@ -252,11 +252,12 @@
                 </div>
             </div>
         </div>
-        <div id="loginPage" class="modal" style="background-image: url(styles/images/bgBody.png);">
-             <form class="modal-content animate" action="action_page.php">
-             <span onclick="document.getElementById('loginPage').style.display='none'" class="close" title="Close Modal">&times;</span>
-              <h3 style="color: white; margin-left: 120px; font-family: 'Roboto'; font-weight: 200;">Đăng Nhập <i class="fa fa-lock"></i></h3>
-              <div class="container">
+
+        <div id="loginPage" class="modal">
+                <form class="modal-content animate" action="action_page.php">
+                <span onclick="document.getElementById('loginPage').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <h3 style="color: white; margin-left: 120px; font-family: 'Roboto'; font-weight: 200;">Đăng Nhập <i class="fa fa-lock"></i></h3>
+                <div class="container">
                 <label><b  style="font-family: 'Roboto'; font-weight: bold; color: white;">Tên Đăng Nhập</b></label>
                 <input type="text" placeholder="Vui lòng nhập tên đăng nhập của bạn vào đây " name="uname" required>
 
@@ -265,14 +266,15 @@
                 <input class="chk" type="checkbox" checked="checked">  Ghi Chú
 
                 <button type="submit" style="color: #00668b">Đăng Nhập</button>
-              </div>
+                </div>
 
-              <div class="container">
+                <div class="container">
                 <button type="button" class="cancelbtn" style="color: #00668b">Cancel</button>
                 <span class="psw">Forgot <a href="#">password?</a></span>
-              </div>
+                </div>
             </form>
-        </div>
+        </div>  
+
         <div class="row footerBook text-center" style="color: #808080;">
             <p style="margin-top: 8px;">Copyright @ sharebook.com.vn </p>
         </div>
