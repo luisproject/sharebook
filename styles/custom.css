@@ -497,6 +497,7 @@ ul{
     
     padding: 5px;
     border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 #profile .myBookInner h3{
@@ -547,5 +548,15 @@ ul{
 }
 
 #detail .detailContent{
-    border: 1px solid red;
+    border: 1px solid #e8e8e8;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+#detail .detailContent h3{
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: #d0021b;
 }
