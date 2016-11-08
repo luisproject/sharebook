@@ -73,7 +73,7 @@ ul{
     width: 80%;
     margin: 0 auto;
     background-color: #ffffff;
-    opacity: 0.9;
+    opacity: 1;
     height: auto;
 }
 /** SLIDE */
@@ -474,7 +474,52 @@ ul{
 #profile .detail {
     font-style: italic;
     font-family: 'Roboto'; 
-    font-weight: bold; 
+    font-weight: 400; 
     color: rgb(3, 135, 197);
     font-size: 16px;
+}
+
+#profile .myBookInner{
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+    
+    padding: 5px;
+    border-radius: 20px;
+}
+
+#profile .myBookInner h3{
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: #ff1f00;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#profile .myBookInner .ab{
+    margin-top: -10px;
+    margin-left: 15px;
+}
+
+#profile .myBookInner .ab .a{
+    color: rgb(183, 183, 183);
+    font-style: italic;
+    font-size: 16px;
+}
+
+#profile .myBookInner .ab .b{
+    color: #4681da;
+}
+
+#profile .myBookInner .abc{
+    margin-bottom: 10px;
+    margin-right: 10px;        
+}
+
+#profile .myBookInner .content{
+    margin-left: 15px;
+    margin-right: 15px;
+    line-height: 1.6em;
+    text-align: justify;
 }
