@@ -560,3 +560,125 @@ ul{
     font-weight: bold;
     color: #d0021b;
 }
+/**                                             ----
+    ----                                    ----
+        ----                            ----
+            ----                    ----
+                ---- POST BOOK ---- */
+#postBook .modal-content {
+    background-color: #f7f7f7;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 40%; 
+}
+
+#postBook .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    margin-top: 10px;
+    color: rgb(3, 135, 197);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#postBook .close:hover,#loginPage .close:focus {
+    color: #f00;
+    cursor: pointer;
+}
+
+
+#postBook .modal-content h3{
+    color: #2c91c5; 
+    margin-left: 65px; 
+    font-family: 'Roboto'; 
+    font-weight: bold;
+}
+#postBook .modal-content .line{
+    border-bottom: 2px solid #ececec;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#postBook .container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#postBook .container .selectBox{
+}
+
+#postBook .container input[type=text], input[type=password] {
+    width: 100%;
+    padding: 6px 6px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #f7f7f7;
+    box-sizing: border-box;
+}
+
+#postBook .container input[type=checkbox]{
+    margin-top: 5px;
+}
+/* Set a style for all buttons */
+#postBook .container button {
+    background-color: rgb(109, 207, 246);
+    color: white;
+    padding: 6px 6px;
+    margin: 8px 0;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    
+    background: linear-gradient(top,#f2f6f7,#979394);
+	background: -webkit-linear-gradient(top,#f2f6f7,#979394);
+	background: -moz-linear-gradient(top,#f2f6f7,#979394);
+    
+    border-radius: 5px;
+    border: 1px solid #f7f7f7;
+}
+
+#postBook .container input[type=button]{
+    background-color: rgb(109, 207, 246);
+    
+    background: linear-gradient(top,#f2f6f7,#979394);
+	background: -webkit-linear-gradient(top,#f2f6f7,#979394);
+	background: -moz-linear-gradient(top,#f2f6f7,#979394);
+    
+    border-radius: 5px;
+    border: 1px solid #f7f7f7;
+}
+
+#postBook .container .img img{
+    margin-left: 80px;
+    margin-top: 15px;
+    width: 20%;
+    height: 20%;
+}
+
+#postBook .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}

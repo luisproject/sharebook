@@ -26,9 +26,19 @@
         <!-- Embed Javascript -->
         <script src="styles/bootstrap.min.js" type="text/javascript"></script>
         <script src="styles/jquery.js" type="text/javascript"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
         <!-- Embed Customize CSS -->
         <link href="styles/custom.css" rel="stylesheet" type="text/css"/>
+
+        <script>
+            $( function() {
+                $( "#datepicker" ).datepicker();
+            } );
+        </script>
+
+        <script src="styles/js/message.js"></script>
     </head>
     <body>
         <div class="header">
@@ -88,7 +98,7 @@
                                 <div class="row">
                                     <h3 class="slideInUp animated" style="visibility: visible; animation-duration: 0.6s; animation-delay: 1s; animation-name: slideInUp;"><span>SHARE</span> BOOKS </h3>
                                     <p id="description" class="slideIntRight animated" style="visibility: visible; animation-duration: 0.6s; animation-delay: 1s; animation-name: zoomInRight;">trước những cuốn sách, tất cả mọi thứ đều mờ nhạt đi</p>
-                                    <a href="#" class="lightSpeedIn" style="visibility: visible; animation-duration: 0.6s; animation-delay: 1s; animation-name: lightSpeedIn;">POST BOOKS</a>
+                                    <a href="#" class="lightSpeedIn" style="visibility: visible; animation-duration: 0.6s; animation-delay: 1s; animation-name: lightSpeedIn;" onclick="document.getElementById('postBook').style.display='block'">POST BOOKS</a>
                                 </div>
                             </div>
                         </div>
@@ -115,9 +125,9 @@
                 </div>
             </div>
             <div class="row sidebar">
-                <div class="col-md-12 col-lg-4 col-xs-12 col-sm-12 bounceInLeft animated" style="visibility: visible; animation-duration: 0.6s; animation-delay: 1s; animation-name: bounceInLeft;">
+                <div class="col-md-12 col-lg-4 col-xs-12 col-sm-12 bounceInLeft animated" style="visibility: visible; animation-duration: 1.6s; animation-delay: 1s; animation-name: bounceInLeft;">
                     <div class="row titleLeft">
-                        <h3>Danh Mục Sách</h3>
+                        <h3 class="bounceIn animated">Danh Mục Sách</h3>
                     </div>
                     <div class="row listCat">
                         <ul>
@@ -144,9 +154,9 @@
                 </div>
                 <div class="col-md-12 col-lg-8 col-xs-12 col-sm-12">
                     <div class="row titleDetail">
-                        <h3>Tất cả</h3>
+                        <h3 class="bounceIn animated" style="visibility: visible; animation-duration: 1.6s; animation-delay: 1s; animation-name: bounceIn;">Tất cả</h3>
                     </div>
-                    <div class="row content">
+                    <div class="row content bounceInRight animated" style="visibility: visible; animation-duration: 1.6s; animation-delay: 1s; animation-name: bounceInRight;">
                         <div class="row listBook">
                             <div class="col-md-4" id="book">
                                 <div class="row">
@@ -273,6 +283,56 @@
                 <span class="psw">Forgot <a href="#">password?</a></span>
                 </div>
             </form>
+        </div>  
+
+        <div id="postBook" class="modal">
+                <form class="modal-content animate" action="action_page.php">
+                    <span onclick="document.getElementById('postBook').style.display='none'" class="close" title="Bạn đang đóng chức năng upload sách">&times;</span>
+                    <h3>Thông tin sách <i class="fa fa-book"></i></h3>
+                    <p class="line"></p>
+                    <div class="container">
+
+                        <label><b  style="font-family: 'Roboto'; font-weight: 300; color: #adadad;">Tên sách</b></label>
+                        <input style="margin-top: -8px;" type="text" placeholder=" " name="uname" required>
+
+                        <label><b style="font-family: 'Roboto'; font-weight: 300; color: #adadad;">Tác giả</b></label>
+                        <input style="margin-top: -8px;" type="password" placeholder=" " name="psw" required>
+
+                        <label><b style="font-family: 'Roboto'; font-weight: 300; color: #adadad;">Thể loại</b></label>
+                        <select style="height: 35px; border: 1px solid #f7f7f7; margin-left: 10px; margin-bottom: 15px; margin-top: 10px;">
+                            <option>Sách Kinh Doanh - Marketing</option>
+                            <option>Sách Tài Chính - Ngân Hàng</option>
+                            <option>Sách Ngoại Ngữ</option>
+                            <option>Sách Khoa Học - Tự Nhiên</option>
+                            <option>Sách Văn Hóa - Nghệ Thuật</option>
+                            <option>Sách Kinh Tế - Quản Lý</option>
+                            <option>Sách Công Nghệ Công Tin</option>
+                        </select>
+
+                        <br>
+                        <label><b style="font-family: 'Roboto'; font-weight: 300; color: #adadad; margin-top: 5px;">Ngày đăng: </b></label>
+                        <input style="height: 35px; border: 1px solid #f7f7f7;" type="date" value="">
+                        
+                        <br>
+                        <div class="img">
+                            <img src="styles/images/cleancode.jpg" alt="upload img">
+                        </div>  
+                        <label><b style="font-family: 'Roboto'; font-weight: 300; color: #adadad; margin-top: 5px;">Hình ảnh: </b></label>
+                        <input type="button" style="margin-top: 15px; height: 35px;" value="Chọn ảnh">
+
+                        <br>
+                        <label><b style="font-family: 'Roboto'; font-weight: 300; color: #adadad; margin-top: 5px;">Mô tả: </b></label>
+                        <br>
+                        <textarea cols="55" rows="4" style="border: 1px solid #f7f7f7;"></textarea>
+
+                        <br>
+                        <label><b style="font-family: 'Roboto'; font-weight: 300; color: #adadad; margin-top: 5px;">Chi tiết: </b></label>
+                        <br>
+                        <textarea cols="55" rows="6" style="border: 1px solid #f7f7f7;"></textarea>
+
+                        <button type="submit" style="color: #00668b; width:50%;">Đăng sách</button>
+                    </div>
+                </form>
         </div>  
 
         <div class="row footerBook text-center" style="color: #808080;">
